@@ -1,4 +1,4 @@
-folium==0.15.0
-streamlit==1.28.2
-streamlit-folium==0.15.1
+Folium
+streamlit
+streamlit-folium
 
