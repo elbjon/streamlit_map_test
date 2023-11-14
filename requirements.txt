@@ -1,4 +1,4 @@
-Folium
+folium
 streamlit
 streamlit-folium
 branca
