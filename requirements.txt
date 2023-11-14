@@ -1,7 +1,3 @@
-folium
-streamlit
-streamlit-folium
-branca
-Jinja2
-Numpy
-Requests
+folium==0.15.0
+streamlit==1.28.2
+streamlit-folium==0.15.1
