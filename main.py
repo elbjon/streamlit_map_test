@@ -32,8 +32,5 @@ folium.Marker(
 ).add_to(m)
 
 # call to render Folium map in Streamlit
-
-try:
-    st_data = st_folium(m, width=725)
-except:
-    m
+folium_static(m, width=1000)
+st_folium(m, width=725)
