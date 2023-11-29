@@ -92,22 +92,22 @@ folium.LayerControl().add_to(m)
 #if not os.path.isfile(merc):
 #    print(f"Could not find {merc}")
 #else:
-img = folium.raster_layers.ImageOverlay(
-    name="Map Overlay",
-    image='1.png',
-    bounds=[[52, 10], [53, 11]],
-    opacity=0.6,
-    #interactive=True,
-    #cross_origin=False,
-    #zindex=1,
-)
+#img = folium.raster_layers.ImageOverlay(
+#    name="Map Overlay",
+#    image='1.png',
+#    bounds=[[52, 10], [53, 11]],
+#    opacity=0.6,
+#    #interactive=True,
+#    #cross_origin=False,
+#    #zindex=1,
+#)
 
 
 #folium.LayerControl().add_to(m)
 #folium.Popup("I am an image").add_to(img)
 
 
-img.add_to(m)
+#img.add_to(m)
 
 
 m
