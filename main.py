@@ -68,6 +68,14 @@ m = folium.Map(tiles=None)
 
 folium.TileLayer("OpenStreetMap").add_to(m)
 folium.TileLayer("cartodb positron",show=False).add_to(m)
+folium.TileLayer(
+            tiles = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+            attr = 'Esri',
+            name = 'Esri Satellite',
+            show=False,
+            overlay = False,
+            control = True
+           ).add_to(m)
 
 folium.LayerControl().add_to(m)
 
