@@ -97,14 +97,14 @@ img = folium.raster_layers.ImageOverlay(
     image='1.png',
     bounds=[[52, 10], [53, 11]],
     opacity=0.6,
-    interactive=True,
-    cross_origin=False,
-    zindex=1,
+    #interactive=True,
+    #cross_origin=False,
+    #zindex=1,
 )
 
 
-folium.LayerControl().add_to(m)
-folium.Popup("I am an image").add_to(img)
+#folium.LayerControl().add_to(m)
+#folium.Popup("I am an image").add_to(img)
 
 
 img.add_to(m)
