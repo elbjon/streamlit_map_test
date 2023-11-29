@@ -77,6 +77,11 @@ folium.TileLayer(
             control = True
            ).add_to(m)
 
+folium.TileLayer(
+    tiles = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    attr='opentopomap.org',
+    show=False,
+    ).add_to(m)
 
 
 
