@@ -90,7 +90,7 @@ else:
     img = folium.raster_layers.ImageOverlay(
         name="Mercator projection SW",
         image=merc,
-        bounds=[[-82, -180], [82, 180]],
+        bounds=[[52, 10], [53, 11]],
         opacity=0.6,
         interactive=True,
         cross_origin=False,
