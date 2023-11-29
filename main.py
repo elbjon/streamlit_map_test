@@ -1,6 +1,7 @@
 import streamlit as st
 import folium
 from streamlit_folium import st_folium, folium_static
+import os
 
 
 
@@ -75,11 +76,12 @@ folium.LayerControl().add_to(m)
 folium_static(m)
 
 
-import os
-import folium
+
+
+
 
 m = folium.Map([37, 0], zoom_start=1)
-merc = os.path.join("data", "Mercator_projection_SW.png")
+merc = '1.png' #= os.path.join("data", "Mercator_projection_SW.png")
 
 
 if not os.path.isfile(merc):
