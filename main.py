@@ -77,13 +77,8 @@ folium.TileLayer(
             control = True
            ).add_to(m)
 
-folium.TileLayer('CartoDB Positron',show=False).add_to(m)
 
-folium.TileLayer('NASAGIBS Blue Marble',attr='NASAGIBS Blue Marble', show=True).add_to(m)
 
-folium.TileLayer('MapQuest Open Aerial',attr='MapQuest Open Aerial', show=True).add_to(m)
-	
-folium.TileLayer('stamenwatercolor',attr='stamenwatercolor',show=True).add_to(m)
 
 
 folium.LayerControl().add_to(m)
