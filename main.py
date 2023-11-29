@@ -73,17 +73,15 @@ folium.TileLayer(
     ).add_to(m)
 folium.LayerControl().add_to(m)
 
-folium_static(m)
 
 
 
 
 
 
-m = folium.Map([37, 0], zoom_start=1)
+
+# add image
 merc = '1.png' #= os.path.join("data", "Mercator_projection_SW.png")
-
-
 if not os.path.isfile(merc):
     print(f"Could not find {merc}")
 else:
@@ -118,7 +116,7 @@ else:
 
 
 #folium.LayerControl().add_to(m)
-#folium.Popup("I am an image").add_to(img)
+
 
 
 
