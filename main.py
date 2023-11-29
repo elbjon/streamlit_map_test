@@ -90,7 +90,7 @@ else:
     img = folium.raster_layers.ImageOverlay(
         name="Mercator projection SW",
         image=merc,
-        bounds=[[51.95, 9.97], [53.2, 11.1]],
+        bounds=[[51.9, 9.9], [53.2, 11.1]],
         opacity=0.6,
         interactive=True,
         cross_origin=False,
@@ -112,7 +112,7 @@ else:
         [53, 11], popup="53, 11", tooltip="HELLOHELLO"
     ).add_to(m)
     folium.Marker(
-        [52, -11], popup="52, 11", tooltip="HELLOHELLO")
+        [52, 11], popup="52, 11", tooltip="HELLOHELLO")
 
 
 
