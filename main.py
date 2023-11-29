@@ -96,7 +96,7 @@ else:
         cross_origin=False,
         zindex=1,
     )
-
+    folium.FitOverlays().add_to(m)
     folium.Popup("I am an image").add_to(img)
 
     img.add_to(m)
