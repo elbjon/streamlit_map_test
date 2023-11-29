@@ -26,7 +26,7 @@ m = folium.Map(location= [52, 10],
            ).add_to(f)
 
 
-
+folium_static(f)
 
 
 
