@@ -98,8 +98,8 @@ else:
     )
     
     folium.Popup("I am an image").add_to(img)
-    folium.FitOverlays(img).add_to(m)
-    #img.add_to(m)
+    #folium.FitOverlays(img).add_to(m)
+    img.add_to(m)
     folium.LayerControl().add_to(m)
     
     folium.Marker(
