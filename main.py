@@ -10,10 +10,9 @@ from streamlit_folium import st_folium, folium_static
 #m
 
 
-
-import folium 
+ 
 from streamlit_folium import st_folium
-import streamlit as st
+
 
 
 def get_pos(lat, lng):
@@ -61,3 +60,15 @@ folium.Marker(
 # call to render Folium map in Streamlit
 folium_static(x)
 #st_folium(m, width=725)
+
+
+st.write('Here we go:')
+
+m = folium.Map(tiles=None)
+
+folium.TileLayer("OpenStreetMap").add_to(m)
+folium.TileLayer("cartodb positron",show=False).add_to(m)
+
+folium.LayerControl().add_to(m)
+
+folium_static(m)
