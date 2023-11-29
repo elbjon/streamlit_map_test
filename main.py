@@ -65,7 +65,6 @@ folium_static(x)
 st.write('Here we go:')
 
 m = folium.Map(tiles=None)
-
 folium.TileLayer("OpenStreetMap").add_to(m)
 folium.TileLayer("cartodb positron",show=False).add_to(m)
 folium.TileLayer(
@@ -77,16 +76,16 @@ folium.TileLayer(
             control = True
            ).add_to(m)
 
-#folium.TileLayer(
-#    tiles = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
-#    attr='opentopomap.org',
-#    show=False,
-#    ).add_to(m)
-
-
-
-
+folium.TileLayer(
+    tiles = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',
+    attr='opentopomap.org',
+    show=False,
+    ).add_to(m)
 folium.LayerControl().add_to(m)
+
+folium_static(m)
+
+
 
 
 #if not os.path.isfile(merc):
