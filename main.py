@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-from streamlit_folium import st_folium
+from streamlit_folium import st_folium, folium_static
 
 
 # Create a map using the Map() function and the coordinates for Boulder, CO
@@ -32,5 +32,5 @@ folium.Marker(
 ).add_to(m)
 
 # call to render Folium map in Streamlit
-folium_static(m, width=1000)
-st_folium(m, width=725)
+folium_static(m)
+#st_folium(m, width=725)
