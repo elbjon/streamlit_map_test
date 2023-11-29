@@ -1,10 +1,8 @@
 import streamlit as st
 import folium
 from streamlit_folium import st_folium, folium_static
-#from folium.plugins import ImageOverlay
-#from folium.plugins import ImageOverlay
-from io import BytesIO
-from PIL import Image
+from folium.plugins import ImageOverlay
+
 
 
 # Create a map using the Map() function and the coordinates for Boulder, CO
@@ -15,7 +13,6 @@ from PIL import Image
 
 
  
-from streamlit_folium import st_folium
 
 
 
@@ -90,33 +87,32 @@ folium.LayerControl().add_to(m)
 folium_static(m)
 
 
+import os
+import folium
+
+m = folium.Map([37, 0], zoom_start=1)
+merc = os.path.join("data", "Mercator_projection_SW.png")
 
 
+if not os.path.isfile(merc):
+    print(f"Could not find {merc}")
+else:
+    img = folium.raster_layers.ImageOverlay(
+        name="Mercator projection SW",
+        image=merc,
+        bounds=[[-82, -180], [82, 180]],
+        opacity=0.6,
+        interactive=True,
+        cross_origin=False,
+        zindex=1,
+    )
 
-# Create a Folium map centered at a specific location
-m = folium.Map(location=[52, 10], zoom_start=10)
+    folium.Popup("I am an image").add_to(img)
 
-# Load your image
-image_path = "1.png"
-img = Image.open(image_path)
+    img.add_to(m)
+    folium.LayerControl().add_to(m)
 
-# Convert the image to BytesIO object
-img_byte_array = BytesIO()
-img.save(img_byte_array, format='PNG')
-
-# Create an ImageOverlay
-image_overlay = ImageOverlay(
-    img_byte_array.getvalue(),
-    bounds=[[52, 10], [53, 11]],
-    opacity=0.6,
-)
-
-# Add the ImageOverlay to the Folium map
-image_overlay.add_to(m)
-
-# Display the map in Streamlit
-st.markdown(m._repr_html_(), unsafe_allow_html=True)
-
+m
 
 
 #folium.LayerControl().add_to(m)
