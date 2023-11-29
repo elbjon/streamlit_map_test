@@ -90,15 +90,15 @@ else:
     img = folium.raster_layers.ImageOverlay(
         name="Mercator projection SW",
         image=merc,
-        bounds=[[51.865, 9.7], [53.5, 11.82]],
+        bounds=[[51.865, 9.7], [53.4, 11.8]],
         opacity=0.6,
         interactive=True,
         cross_origin=False,
         zindex=1,
     )
-    #folium.FitOverlays().add_to(m)
+    
     folium.Popup("I am an image").add_to(img)
-
+    folium.FitOverlays(img).add_to(m)
     img.add_to(m)
     folium.LayerControl().add_to(m)
     
