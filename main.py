@@ -1,18 +1,6 @@
 import streamlit as st
 import folium
 from streamlit_folium import st_folium, folium_static
-from folium.plugins import ImageOverlay
-
-
-
-# Create a map using the Map() function and the coordinates for Boulder, CO
-#m = folium.Map(location=[52.8, 10.8], tiles="cartodb positron")
-
-# Display the map
-#m
-
-
- 
 
 
 
