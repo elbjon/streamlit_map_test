@@ -100,18 +100,11 @@ else:
     img.add_to(m)
     folium.LayerControl().add_to(m)
 
-m
+
 
 
 #folium.LayerControl().add_to(m)
 #folium.Popup("I am an image").add_to(img)
-
-
-img.add_to(m)
-
-
-
-
 
 
 
