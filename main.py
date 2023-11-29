@@ -79,13 +79,11 @@ folium.TileLayer(
 
 folium.TileLayer('CartoDB Positron',show=False).add_to(m)
 
-#folium.TileLayer('CartoBD Voyager',show=False).add_to(m)
+folium.TileLayer('NASAGIBS Blue Marble',attr='NASAGIBS Blue Marble', show=False).add_to(m)
 
-folium.TileLayer('NASAGIBS Blue Marble',show=False).add_to(m)
-
-folium.TileLayer('MapQuest Open Aerial',show=False).add_to(m)
+folium.TileLayer('MapQuest Open Aerial',attr='MapQuest Open Aerial', show=False).add_to(m)
 	
-folium.TileLayer('stamenwatercolor',show=False).add_to(m)
+folium.TileLayer('stamenwatercolor',attr='stamenwatercolor',show=False).add_to(m)
 
 
 folium.LayerControl().add_to(m)
