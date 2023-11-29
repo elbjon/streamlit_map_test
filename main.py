@@ -71,14 +71,6 @@ folium.TileLayer(
     attr='opentopomap.org',
     show=False,
     ).add_to(m)
-folium.LayerControl().add_to(m)
-
-
-
-
-
-
-
 
 # add image
 merc = '1.png' #= os.path.join("data", "Mercator_projection_SW.png")
@@ -95,7 +87,7 @@ else:
         zindex=1,
     )
     
-    folium.Popup("I am an image").add_to(img)
+    #folium.Popup("I am an image").add_to(img)
     
     img.add_to(m)
     folium.LayerControl().add_to(m)
@@ -115,7 +107,7 @@ else:
 
 
 
-#folium.LayerControl().add_to(m)
+folium.LayerControl().add_to(m)
 
 
 
