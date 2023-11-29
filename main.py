@@ -101,7 +101,18 @@ else:
 
     img.add_to(m)
     folium.LayerControl().add_to(m)
-
+    
+    folium.Marker(
+        [52, 10], popup="52,10", tooltip="HELLOHELLO"
+    ).add_to(m)
+    folium.Marker(
+        [53, 10], popup="53, 10", tooltip="HELLOHELLO"
+    ).add_to(m)
+    folium.Marker(
+        [53, 11], popup="53, 11", tooltip="HELLOHELLO"
+    ).add_to(m)
+    folium.Marker(
+        [52, -11], popup="52, 11", tooltip="HELLOHELLO")
 
 
 
