@@ -95,10 +95,10 @@ img = folium.raster_layers.ImageOverlay(
     name="Map Overlay",
     image='1.png',
     bounds=[[52, 10], [53, 11]],
-    opacity=0.6,
-    interactive=True,
-    cross_origin=False,
-    zindex=1,
+    #opacity=0.6,
+    #interactive=True,
+    #cross_origin=False,
+    #zindex=1,
 )
 
 
