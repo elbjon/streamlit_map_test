@@ -1,8 +1,8 @@
 import streamlit as st
 import folium
 from streamlit_folium import st_folium, folium_static
-from folium.plugins import ImageOverlay
-from folium.plugins import ImageOverlay
+#from folium.plugins import ImageOverlay
+#from folium.plugins import ImageOverlay
 from io import BytesIO
 from PIL import Image
 
