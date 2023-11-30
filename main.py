@@ -14,11 +14,7 @@ draw = Draw(export=True)
 draw.add_to(m)
 
 # Display the map using Streamlit
-folium_static(m)
+st_folium(m)
 
 # Get the drawn features
-drawn_features = draw.last_action
-
-# Display the drawn features
-st.write("Drawn Features:")
-st.write(drawn_features)
+st.write(draw)
