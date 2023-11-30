@@ -123,8 +123,8 @@ folium.LayerControl().add_to(m)
 
 
 # Get the drawn features
-drawn_features = draw.last_action
+#drawn_features = draw.last_action
 
 # Display the drawn features
-st.write("Drawn Features:")
-st.write(drawn_features)
+st.write(draw)
+#st.write(drawn_features)
