@@ -1,6 +1,6 @@
 import streamlit as st
 import folium
-from streamlit_folium import folium_static
+from streamlit_folium import st_folium, folium_static
 from folium.plugins import Draw
 
 # Create a Streamlit app
