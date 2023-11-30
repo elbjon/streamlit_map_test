@@ -72,6 +72,8 @@ folium.TileLayer(
     show=False,
     ).add_to(m)
 
+folium.vector_layers.Rectangle().add_to(m)
+
 # add image
 merc = '1.png' #= os.path.join("data", "Mercator_projection_SW.png")
 if not os.path.isfile(merc):
@@ -112,4 +114,5 @@ folium.LayerControl().add_to(m)
 
 
 
-folium_static(m)
+dada = st_folium(m)
+st.write(dada)
